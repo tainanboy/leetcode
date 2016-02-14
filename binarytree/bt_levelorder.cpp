@@ -22,7 +22,7 @@ struct TreeNode {
      tree[level].push_back(root->val);
      getdata(tree,root->left,level+1);
      getdata(tree,root->right,level+1);
- }
+   }
 
      int getheight(TreeNode* root){
        if(root==NULL) return 0;
