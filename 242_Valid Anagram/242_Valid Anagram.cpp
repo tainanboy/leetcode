@@ -10,13 +10,13 @@ class Solution {
 public:
     bool isAnagram(string s, string t) {
     	if (s.length() != t.length()) return false;    
-    	int alphabit[26] = {0};
+    	int alphabet[26] = {0};
     	for (int i=0;i<s.length();i++){
-    		alphabit[s[i]-'a']++;
-    		alphabit[t[i]-'a']--;
+    		alphabet[s[i]-'a']++;
+    		alphabet[t[i]-'a']--;
     	}
     	for(int i=0;i<26;i++){
-    		if(alphabit[i]!=0){
+    		if(alphabet[i]!=0){
     			return false;
     		}
     	}	
